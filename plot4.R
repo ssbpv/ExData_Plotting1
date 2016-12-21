@@ -46,5 +46,5 @@ par(mfrow=c(2,2)) # creates plot with 2 columns and 2 rows
  with(FinalData,plot(DateTime,as.numeric(Global_reactive_power),ylab="Global_reactive_power",pch=NA))
  with(FinalData,lines.default(DateTime,as.numeric(Global_reactive_power)))
 
- dev.copy(png,"plot4.png")
+ dev.copy(png,"plot4.png",width = 480, height = 480)
  dev.off()

@@ -35,6 +35,6 @@ with(FinalData,plot(DateTime,as.numeric(Global_active_power)/500,xlab="",ylab="G
 with(FinalData,lines.default(DateTime,as.numeric(Global_active_power)/500))
 
 # copies to png file
-dev.copy(png,"plot2.png")
+dev.copy(png,"plot2.png",width = 480, height = 480)
 # closes the bitmap device
 dev.off()

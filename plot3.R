@@ -38,6 +38,6 @@ with(FinalData,lines(DateTime,as.numeric(Sub_metering_3),col="blue"))
 legend("topright", lwd = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"),text.font = 2,text.width = strwidth("Sub_metering_1         "))
 
 # copies to png file
-dev.copy(png,"plot3.png")
+dev.copy(png,"plot3.png",width = 480, height = 480)
 # closes the bitmap device
 dev.off()

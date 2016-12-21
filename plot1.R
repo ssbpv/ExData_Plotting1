@@ -33,7 +33,7 @@ FinalData<-filter(TestData,Date>="2007-02-01" & Date<= "2007-02-02")
 
 hist(as.numeric(FinalData$Global_active_power)/500,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
 # copies to png file
-dev.copy(png,"plot1.png")
+dev.copy(png,"plot1.png",width = 480, height = 480)
 # closes the bitmap device
 dev.off()
 
