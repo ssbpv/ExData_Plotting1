@@ -31,8 +31,8 @@ FinalData<-filter(TestData,Date>="2007-02-01" & Date<= "2007-02-02")
 
 # for plot2.png: plots a continous line plot to reflect the example graph provided
         #since we don't want the data points to show set pch=NA
-with(FinalData,plot(DateTime,as.numeric(Global_active_power)/500,xlab="",ylab="Global Active Power (kilowatts)",pch=NA))
-with(FinalData,lines.default(DateTime,as.numeric(Global_active_power)/500))
+with(FinalData,plot(DateTime,as.numeric(Global_active_power),xlab="",ylab="Global Active Power (kilowatts)",pch=NA))
+with(FinalData,lines.default(DateTime,as.numeric(Global_active_power)))
 
 # copies to png file
 dev.copy(png,"plot2.png",width = 480, height = 480)

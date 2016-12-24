@@ -33,10 +33,10 @@ FinalData<-filter(TestData,Date>="2007-02-01" & Date<= "2007-02-02")
 # for plot4.png: plots multiple line data to reflect the example graph provided
 
 par(mfrow=c(2,2)) # creates plot with 2 columns and 2 rows
- with(FinalData,plot(DateTime,as.numeric(Global_active_power)/500,xlab="",ylab="Global Active Power (kilowatts)",pch=NA))
- with(FinalData,lines.default(DateTime,as.numeric(Global_active_power)/500))
- with(FinalData,plot(DateTime,as.numeric(Voltage)/10,ylab="Voltage",pch=NA))
- with(FinalData,lines.default(DateTime,as.numeric(Voltage)/10))
+ with(FinalData,plot(DateTime,as.numeric(Global_active_power),xlab="",ylab="Global Active Power (kilowatts)",pch=NA))
+ with(FinalData,lines.default(DateTime,as.numeric(Global_active_power)))
+ with(FinalData,plot(DateTime,as.numeric(Voltage),ylab="Voltage",pch=NA))
+ with(FinalData,lines.default(DateTime,as.numeric(Voltage)))
  with(FinalData,plot(DateTime,as.numeric(Sub_metering_1),xlab="",ylab="Energy sub metering",pch=NA))
  with(FinalData,lines(DateTime,as.numeric(Sub_metering_1)))
  with(FinalData,lines(DateTime,as.numeric(Sub_metering_2),col="red"))
